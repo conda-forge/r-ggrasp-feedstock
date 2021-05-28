@@ -45,7 +45,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=ggrasp
-  license: GPL-2
+  license: GPL-2.0-only
   summary: 'Given a group of genomes and their relationship with each other, the package clusters
     the genomes and selects the most representative members of each cluster. Additional
     data can be provided to the prioritize certain genomes. The results can be printed
