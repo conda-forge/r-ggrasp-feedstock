@@ -1,4 +1,4 @@
-{% set version = '1.0' %}
+{% set version = "1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggrasp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggrasp/ggrasp_{{ version }}.tar.gz
-  sha256: 0133019df762cd19d7daf1b5f2b353c43568124ade6e34fa04837656138a3652
+  sha256: 3f74f1583174ae73ed64dec7b697c91e5c1c323d026454953d0ceba8615d844a
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -46,15 +46,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=ggrasp
   license: GPL-2.0-only
-  summary: 'Given a group of genomes and their relationship with each other, the package clusters
-    the genomes and selects the most representative members of each cluster. Additional
-    data can be provided to the prioritize certain genomes. The results can be printed
-    out as a list or a new phylogeny with graphs of the trees and distance distributions
-    also available. For detailed introduction see: Thomas H Clarke, Lauren M Brinkac,
-    Granger Sutton, and Derrick E Fouts (2018), GGRaSP: a R-package for selecting representative
-    genomes using Gaussian mixture models, Bioinformatics, bty300, <doi:10.1093/bioinformatics/bty300>.'
+  summary: 'Given a group of genomes and their relationship with each other, the package clusters the genomes and selects the most representative members of each cluster. Additional data can be provided to the prioritize certain genomes. The results can be printed out as a list or a new phylogeny with graphs of the trees
+    and distance distributions also available. For detailed introduction see: Thomas H Clarke, Lauren M Brinkac, Granger Sutton, and Derrick E Fouts (2018), GGRaSP: a R-package for selecting representative genomes using Gaussian mixture models, Bioinformatics, bty300, <doi:10.1093/bioinformatics/bty300>.'
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
