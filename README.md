@@ -1,11 +1,11 @@
-About r-ggrasp
-==============
+About r-ggrasp-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggrasp-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=ggrasp
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggrasp-feedstock/blob/main/LICENSE.txt)
 
 Summary: Given a group of genomes and their relationship with each other, the package clusters the genomes and selects the most representative members of each cluster. Additional data can be provided to the prioritize certain genomes. The results can be printed out as a list or a new phylogeny with graphs of the trees and distance distributions also available. For detailed introduction see: Thomas H Clarke, Lauren M Brinkac, Granger Sutton, and Derrick E Fouts (2018), GGRaSP: a R-package for selecting representative genomes using Gaussian mixture models, Bioinformatics, bty300, <doi:10.1093/bioinformatics/bty300>.
 
